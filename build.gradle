@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'io.github.liquidjoo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.reflections/reflections
+    implementation 'org.reflections:reflections:0.9.12'
+    testImplementation 'com.h2database:h2:1.4.200'
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
