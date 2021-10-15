@@ -1,4 +1,4 @@
-package db;
+package io.github.liquidjoo.simplehiberante.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -26,7 +26,7 @@ public class H2InMemory {
             System.out.println("Connecting to database...");
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
-            //STEP 3: Execute a query
+            //STEP 3: Execute a io.github.liquidjoo.simplehiberante.query
             System.out.println("Creating table in given database...");
             stmt = conn.createStatement();
 

@@ -1,8 +1,8 @@
-package model;
+package io.github.liquidjoo.simplehiberante.model;
 
-import annotation.Access;
-import annotation.AccessType;
-import annotation.Entity;
+import io.github.liquidjoo.simplehiberante.annotation.Access;
+import io.github.liquidjoo.simplehiberante.annotation.AccessType;
+import io.github.liquidjoo.simplehiberante.annotation.Entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -11,6 +11,7 @@ import java.time.LocalDate;
 @Entity
 public class Car {
 
+    @Id
     private Long id;
 
     private String name;
@@ -24,5 +25,9 @@ public class Car {
         this.name = name;
         this.price = price;
         this.releaseDate = releaseDate;
+    }
+
+    public Long getId() {
+        return id;
     }
 }

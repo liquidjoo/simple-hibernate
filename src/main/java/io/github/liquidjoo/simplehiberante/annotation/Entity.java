@@ -1,4 +1,4 @@
-package annotation;
+package io.github.liquidjoo.simplehiberante.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

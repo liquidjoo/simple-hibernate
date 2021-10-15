@@ -1,4 +1,4 @@
-package annotation;
+package io.github.liquidjoo.simplehiberante.annotation;
 
 public enum AccessType {
 

@@ -1,22 +1,29 @@
 plugins {
+    id 'org.springframework.boot' version '2.4.12-SNAPSHOT'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
+
 
 group 'io.github.liquidjoo'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/snapshot' }
 }
 
+
 dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
     // https://mvnrepository.com/artifact/org.reflections/reflections
     implementation 'org.reflections:reflections:0.9.12'
     testImplementation 'com.h2database:h2:1.4.200'
 
-    testImplementation 'org.assertj:assertj-core:3.11.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
