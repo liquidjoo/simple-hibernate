@@ -11,7 +11,6 @@ import java.time.LocalDate;
 @Entity
 public class Car {
 
-    @Id
     private Long id;
 
     private String name;

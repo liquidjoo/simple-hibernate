@@ -34,16 +34,16 @@ class SessionManagerTest {
     @Test
     void save() {
         final Car car = new Car(1L, "김성주", BigDecimal.ZERO, LocalDate.now());
-        manager.save(car.getId(), car);
-        assertThat(manager.get(car.getId())).isSameAs(car);
+        manager.save(Car.class, car.getId(), car);
+        assertThat(manager.get(Car.class, car.getId())).isSameAs(car);
     }
 
     @Test
     void detached() {
         final Car car = new Car(1L, "김성주", BigDecimal.ZERO, LocalDate.now());
-        manager.save(car.getId(), car);
+        manager.save(Car.class, car.getId(), car);
         manager.detached(car.getId());
-        assertThat(manager.get(car.getId())).isNull();
+        assertThat(manager.get(Car.class, car.getId())).isNull();
     }
 
     @Test
@@ -55,7 +55,7 @@ class SessionManagerTest {
 
     @Test
     void find() {
-        final Car car = manager.find(Car.class, 1L);
+        final Car car = (Car) manager.find(Car.class, 1L);
         assertThat(selectCount).isEqualTo(1);
     }
 }
