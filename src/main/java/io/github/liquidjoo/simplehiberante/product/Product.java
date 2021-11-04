@@ -32,4 +32,5 @@ public class Product {
         this.productType = productType;
         this.price = price;
     }
+
 }
