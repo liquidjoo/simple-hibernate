@@ -8,7 +8,7 @@ import org.hibernate.service.spi.SessionFactoryServiceRegistry;
 public class CustomEventListenerIntegrator implements Integrator {
     @Override
     public void integrate(Metadata metadata, SessionFactoryImplementor sessionFactory, SessionFactoryServiceRegistry serviceRegistry) {
-        System.out.println("b");
+        System.out.println("c");
     }
 
     @Override
