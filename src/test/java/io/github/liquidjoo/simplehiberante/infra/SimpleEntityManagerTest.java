@@ -16,7 +16,7 @@ class SimpleEntityManagerTest {
 
         entityManager.updateSession(Product.class, 1L, new Product(1L, "justin", "mouse", BigDecimal.valueOf(40_000)));
 
-        entityManager.loadSession()
+//        entityManager.loadSession()
 
 
     }
