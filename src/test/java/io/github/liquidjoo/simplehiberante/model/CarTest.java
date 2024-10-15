@@ -33,4 +33,12 @@ class CarTest {
            assertThat(declaredFields[3].getName()).isEqualTo("releaseDate");
         });
     }
+
+    @Test
+    void name() {
+
+        String a = "https://mamedene.page.link/qjER";
+        String[] split = a.split("/");
+        System.out.println(split[3]);
+    }
 }

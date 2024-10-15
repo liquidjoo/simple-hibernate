@@ -74,7 +74,7 @@ public class HibernateSession implements EventSource {
 
         }
 
-        AbstractEntityPersister -> select(데이터 바인딩 이후) ->
-        -> sql 저장소 -> db access -> 시리얼라이즈 -> 객체 -> EntitiyPersister;
+//        AbstractEntityPersister -> select(데이터 바인딩 이후) ->
+//        -> sql 저장소 -> db access -> 시리얼라이즈 -> 객체 -> EntitiyPersister;
     }
 }
