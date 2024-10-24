@@ -45,4 +45,8 @@ public class DefaultEntityPersister implements EntityPersister{
         return query;
     }
 
+    @Override
+    public String getEntityName() {
+        return null;
+    }
 }

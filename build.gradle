@@ -22,7 +22,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     // https://mvnrepository.com/artifact/org.reflections/reflections
     implementation 'org.reflections:reflections:0.9.12'
-    testImplementation 'com.h2database:h2:1.4.200'
+    implementation 'com.h2database:h2'
 
     testImplementation 'org.assertj:assertj-core:3.11.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'

@@ -1,7 +1,7 @@
 package io.github.liquidjoo.simplehiberante.entity;
 
-import jakarta.persistence.Table;
 
+import javax.persistence.Table;
 import java.util.Objects;
 
 public class EntityTableName {
